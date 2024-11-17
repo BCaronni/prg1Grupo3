@@ -10,10 +10,12 @@
 
     <header>
         <img src="" alt="" class="logo">
-        <form action="resultado.html" method="get" onsubmit="return chequearbusqueda" ></form>
+        <form id= "buscarForm" action="resultado.html" method="get" >
         <input type="text" id="searchInput" name="search" placeholder="Buscar.." required>
         <button type="submit">Buscar</button>
-        <p id="error-message">La busqueda tiene que tener al menos 3 caracteres</p>
+        <p id="mensaje-error">La busqueda tiene que tener al menos 3 caracteres</p>
+    </form>
+
 
         <section>
             <ul>
@@ -35,6 +37,6 @@
         <h4>Trabajo hecho por: Benicio Levy & Benjamin Caronni </h4>
     </footer>
     
-    
+<script src="js/header.js"></script>  
 </body>
 </html>
