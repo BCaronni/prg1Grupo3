@@ -1,31 +1,54 @@
 /* styles para el header */
-#mensaje-error{
-    color: red;
-    display: none;
+#mensaje-error {
+  color: red;
+  display: none;
 }
 
 /* Estilo para el contenedor de recetas */
 .recipeList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* Estilo para cada receta */
 .recipeList article {
-    width: 30%;
-    padding: 10px;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Estilo para las imágenes */
 .recipeList img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recipeSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.recipeSearch article {
+  width: 30%;
+  padding: 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.recipeSearch img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
