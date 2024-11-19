@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
 header{
   background-color: rgb(96, 139, 193);
 }
@@ -7,6 +8,15 @@ footer{
 
 body{
  background-color:rgb(203, 220, 235);
+}
+
+/*Estilo para el titulo principal */
+#ManosALaMasa{
+text-align: center;
+font-family: "Montserrat", sans-serif;
+letter-spacing: 1px;
+
+
 }
 
 #searchInput { 
@@ -32,9 +42,10 @@ body{
   padding: 10px;
   margin: 8px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 5px;
   text-align: center;
+  font-family: "Montserrat";
 }
 
 /* Estilo para las imágenes */
@@ -66,4 +77,5 @@ body{
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
+  
 }
