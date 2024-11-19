@@ -1,3 +1,18 @@
+header{
+  background-color: rgb(96, 139, 193);
+}
+footer{
+  background-color: rgb(56, 75, 112);
+}
+
+body{
+ background-color:rgb(203, 220, 235);
+}
+
+#searchInput { 
+  background-color: rgb(243, 243, 224);
+}
+
 /* styles para el header */
 #mensaje-error {
   color: red;

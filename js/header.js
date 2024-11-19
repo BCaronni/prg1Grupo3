@@ -10,11 +10,11 @@ buscarForm.addEventListener("submit", function (event) {
   if (searchInput.value.length < 3) {
     errorMessage.style.display = "block"; // Muestra el mensaje de error
     // Con el block de arriba frena el envio
+    event.preventDefault()
     
   } else {
     errorMessage.style.display = "none"; // No muestra el mensaje de error
     console.log("El evento submit fue capturado correctamente.");
-    event.preventDefault() //Esto hace que no me funcion desde otras paginas pero si en resultados.html (corregir)
     fetch(`https://dummyjson.com/recipes/search?q=${searchInput.value}`)
       .then(function (response) {
         return response.json();
@@ -22,15 +22,18 @@ buscarForm.addEventListener("submit", function (event) {
 
       .then(function (data) {
         //variable para las recetas
-        let recetasSearch = data.recipes;
+        let recetasSearch = data.recipes;        
+        
+
         //Cadena vacia
         let cadenaSearch = "";
         let recipeSearch = document.querySelector(".recipeSearch");
-
-    
+        
+          
         // Recorro el array
         for (let i = 0; i < recetasSearch.length; i++) {
           cadenaSearch += `<article>
+                        
                         <img src="${recetasSearch[i].image}" alt="">
                         <h3>${recetasSearch[i].name}</h3>
                         <p><strong>Dificultad:</strong> ${recetasSearch[i].difficulty}</p>
@@ -39,6 +42,9 @@ buscarForm.addEventListener("submit", function (event) {
                         `;
         }
         recipeSearch.innerHTML = cadenaSearch;
+        
+      
       });
+    
   }
 });
