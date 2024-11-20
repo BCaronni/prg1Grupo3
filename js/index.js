@@ -11,16 +11,25 @@ fetch('https://dummyjson.com/recipes')
         //Empiezo una cadena vacia para el html
         let cadena = "";
         let recipeList = document.querySelector(".recipeList");
+        let cargarMas =document.querySelector("#cargarMas");
+        let errorCargarMas =document.querySelector(".errorCargarMas")
+        let inicio = 0;
+        let diez = 10;
+    
 
         //estilos
         recipeList.style.display = "flex";
         recipeList.style.display = "wrap";
         recipeList.style.display = "space-evenly";
 
+        function cargarRecetas(){
+
+        
+
 
 
         //Recorro el array
-        for (let i = 0; i < recetas.length; i++){
+        for (let i = inicio; i < inicio + diez; i++){
             cadena += 
              `<article>
                      <img src="${recetas[i].image}" alt="">
@@ -36,7 +45,17 @@ fetch('https://dummyjson.com/recipes')
 
     
     recipeList.innerHTML = cadena;
-})
+}
+cargarRecetas();
+
+
+cargarMas.addEventListener("click", function (){
+    inicio += diez;
+    cargarRecetas();
+
+});
+        
+    })
     .catch(function (error) {
         // En caso de error en la solicitud, mostramos el mensaje de error en la consola
         console.log("Error al cargar las recetas: ", error);

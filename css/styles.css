@@ -19,14 +19,45 @@ letter-spacing: 1px;
 
 }
 
+/* Clase para logo */
+.logo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.logo{
+  height: 12%;
+  width: 12%;
+  border-radius: 60px;
+}
+
+ul li {
+  list-style-type: none;
+}
+/* estilo para color blanco del header y font */
+.headercolor {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+
+}
+
 #searchInput { 
   background-color: rgb(243, 243, 224);
 }
 
 /* styles para el header */
-#mensaje-error {
+#mensaje-error, #mensaje-error2, .errorCargarMas {
   color: red;
   display: none;
+  font-weight: bold;
+}
+.cargarMas-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilo para el contenedor de recetas */
@@ -38,7 +69,7 @@ letter-spacing: 1px;
 
 /* Estilo para cada receta */
 .recipeList article {
-  width: 30%;
+  width: 45%;
   padding: 10px;
   margin: 8px;
   box-sizing: border-box;
@@ -50,10 +81,11 @@ letter-spacing: 1px;
 
 /* Estilo para las imágenes */
 .recipeList img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
+  padding-top: 5%;
 }
 
 .recipeSearch {
@@ -78,4 +110,14 @@ letter-spacing: 1px;
   border-radius: 5px;
   margin-bottom: 10px;
   
+}
+
+h4{
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* Estilo para la lista de categorias en el receta.js, asi no estan azul */
+.categorias{
+  color: black;
 }

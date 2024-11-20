@@ -1,24 +1,46 @@
 console.log("El archivo header.js está cargado correctamente.");
+
 let buscarForm = document.querySelector("#buscarForm");
+let searchInput = document.querySelector("#searchInput");
+let errorMessage = document.querySelector("#mensaje-error");
+let errorMessage2 = document.querySelector("#mensaje-error2");
 
 buscarForm.addEventListener("submit", function (event) {
-  let searchInput = document.querySelector("#searchInput");
-  let errorMessage = document.querySelector("#mensaje-error");
-  console.log("Termino de busqueda:", searchInput.value);
-
-  // Validación de la longitud del texto
-  if (searchInput.value.length < 3) {
-    errorMessage.style.display = "block"; // Muestra el mensaje de error
-    // Con el block de arriba frena el envio
-    event.preventDefault()
-    
+  if (searchInput.value == "") {
+    errorMessage2.style.display = "block"; 
+    errorMessage.style.display = "none";  // Oculta el mensaje de "muy corto"
+    event.preventDefault();
+  } else if (searchInput.value.length < 3) {
+    errorMessage.style.display = "block"; // Muestra el mensaje de "muy corto"
+    errorMessage2.style.display = "none"; // Oculta el mensaje de "campo vacío"
+    event.preventDefault();
   } else {
-    errorMessage.style.display = "none"; // No muestra el mensaje de error
-    console.log("El evento submit fue capturado correctamente.");
+    errorMessage.style.display = "none"; 
+    errorMessage2.style.display = "none"; 
+  }
+});
+
+searchInput.addEventListener("blur", function () {
+  if (searchInput.value == "") {
+    errorMessage2.style.display = "block"; 
+    errorMessage.style.display ="none";
+  } else {
+    errorMessage2.style.display = "none";   
+  }
+});
+
+
+
+
+/* Benja lo de aca abajo es lo tuyo */
+/*
     fetch(`https://dummyjson.com/recipes/search?q=${searchInput.value}`)
       .then(function (response) {
         return response.json();
       })
+
+
+
 
       .then(function (data) {
         //variable para las recetas
@@ -48,3 +70,4 @@ buscarForm.addEventListener("submit", function (event) {
     
   }
 });
+*/
