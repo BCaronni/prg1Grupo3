@@ -24,11 +24,7 @@ fetch('https://dummyjson.com/recipes')
 
         function cargarRecetas(){
 
-        
-
-
-
-        //Recorro el array
+        //Recorro el array, arranca en 0 y va hasta 10, 
         for (let i = inicio; i < inicio + diez; i++){
             cadena += 
              `<article>
@@ -46,11 +42,13 @@ fetch('https://dummyjson.com/recipes')
     
     recipeList.innerHTML = cadena;
 }
+// invocamos la funcion para que cuando se abra la pagina aparezcan las primeras 10
 cargarRecetas();
 
-
+// Cuando el usuario apreta el boton, a la variable inicio se le suman 10 y se invoca a la funcion de arriba
+// o sea ahora va de 10 a 20 el bucle de arriba, mostrando las siguientes 10
 cargarMas.addEventListener("click", function (){
-    inicio += diez;
+    inicio = inicio + diez;
     cargarRecetas();
 
 });
