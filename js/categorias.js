@@ -18,9 +18,7 @@ fetch("https://dummyjson.com/recipes/tags")
       cadena +=
         //lo unico que le falta a categorias ademas del css es que si apretas y no tiene nada adentro deje un mensaje. (fuera de eso anda perfecto)
         `<article>
-
                     <p><a href="./resultado.html?buscador=${tags[i]}"</a>${tags[i]}</p>
-
                     
             </article>
 

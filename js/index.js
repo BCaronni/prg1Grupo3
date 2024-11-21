@@ -31,7 +31,7 @@ fetch('https://dummyjson.com/recipes')
                      <img src="${recetas[i].image}" alt="">
                      <h3>${recetas[i].name}</h3>
                       <p><strong>Dificultad:</strong> ${recetas[i].difficulty}</p>
-                      <p><a href="receta.html?id=${recetas[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
+                        <p><a href="receta.html?id=${recetas[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
                      
                </article>
 

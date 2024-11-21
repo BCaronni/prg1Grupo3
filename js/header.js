@@ -22,10 +22,10 @@ buscarForm.addEventListener("submit", function (event) {
       errorMessage2.style.display = "none"; // Oculta el mensaje de "campo vacío"
 
 
-    } else {
+    } else {//si esta validado pasa a esto
       errorMessage.style.display = "none";
-      errorMessage2.style.display = "none";
-      window.location.href = `./resultado.html?buscador=${searchInput.value}`
+      errorMessage2.style.display = "none";//no hay mensajes de alerta
+      window.location.href = `./resultado.html?buscador=${searchInput.value}` //desde el html que sea, se dirige a resultado.html y el valor de buscador es el del searchinput
 
     }
   });
@@ -34,7 +34,7 @@ buscarForm.addEventListener("submit", function (event) {
     
 
     if (buscador){
-      console.log("Termino de busqueda recibido: ", buscador)
+      console.log("Termino de busqueda recibido: ", buscador)//si existe buscador se busca en la api
       fetch(`https://dummyjson.com/recipes/search?q=${buscador}`)
         .then(function (response) {
           return response.json();
@@ -49,13 +49,13 @@ buscarForm.addEventListener("submit", function (event) {
             let recipeSearch = document.querySelector(".recipeSearch");
       
               // Recorro el array
-            for (let i = 0; i < recetasSearch.length; i++) {
+            for (let i = 0; i < recetasSearch.length; i++) {//recorre para mostrar cada resultado a la busqueda y la misma info que muestra index.js
               cadenaSearch += `<article>
                               
                               <img src="${recetasSearch[i].image}" alt="">
                               <h3>${recetasSearch[i].name}</h3>
                               <p><strong>Dificultad:</strong> ${recetasSearch[i].difficulty}</p>
-                              <p><a href="resultado.html?id=${recetasSearch[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
+                              <p><a href="receta.html?id=${recetasSearch[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
                           </article>
                               `;
               }
@@ -67,7 +67,7 @@ buscarForm.addEventListener("submit", function (event) {
     
   
   
-/*searchInput.addEventListener("blur", function () {
+searchInput.addEventListener("blur", function () {
     if (searchInput.value == "") {
       errorMessage2.style.display = "block";
       errorMessage.style.display = "none";
@@ -75,6 +75,5 @@ buscarForm.addEventListener("submit", function (event) {
       errorMessage2.style.display = "none";
     }
   });
-}
-})
-*/
+
+
