@@ -5,6 +5,9 @@
 
 header{
   background-color: rgb(96, 139, 193);
+  background-image: url(../img/1000_F_419155931_5ls7XLdQcyP0etGr5MjhgJHId4uYscbn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover  ;
 }
 footer{
   background-color: rgb(56, 75, 112);
@@ -15,10 +18,20 @@ body{
 }
 
 /*Estilo para el titulo principal */
+
+#manosCaja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
 #ManosALaMasa{
 text-align: center;
 font-family: "Montserrat", sans-serif;
 letter-spacing: 1px;
+color: rgb(0, 0, 0);
+background-color: white;
 
 
 }
@@ -28,6 +41,7 @@ letter-spacing: 1px;
 display: flex;
 justify-content: center;
 align-items: center;
+padding-bottom: 5%;
 
 
 }
@@ -37,8 +51,16 @@ align-items: center;
   border-radius: 60px;
 }
 
-ul li {
+ul li a {
   list-style-type: none;
+  color: white;
+}
+
+/*Estilo para la caja del Buscar en el header */
+.cajaBuscar{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
 }
 /* estilo para color blanco del header y font */
 .headercolor {

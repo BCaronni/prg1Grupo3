@@ -8,47 +8,52 @@
   </head>
   <body>
     <header>
-      <img src="" alt="" class="logo" />
-      <form id="buscarForm" action="resultado.html" method="get">
-        <input
-          type="text"
-          id="searchInput"
-          name="search"
-          placeholder="Buscar.."
-          required
-        />
-        <button type="submit">Buscar</button>
-        <p id="mensaje-error">
-          La busqueda tiene que tener al menos 3 caracteres
-        </p>
-        <p id="mensaje-error2">La busqueda no puede estar vacia</p>
-      </form>
+      <section>
+        <ul>
+          <li><a class="headercolor" href="./index.html">Home</a></li>
+          <li>
+            <a class="headercolor" href="./categorias.html">Categorias</a>
+          </li>
+          <li><a class="headercolor" href="./login.html">Login</a></li>
+          <li><a class="headercolor" href="./registro.html">Registro</a></li>
+        </ul>
+      </section>
 
       <section>
-        <ul >
-            <li><a class="headercolor" href="./index.html">Home</a></li>
-            <li><a class="headercolor" href="./categorias.html">Categorias</a></li>
-            <li><a class="headercolor" href="./login.html">Login</a></li>
-            <li><a class="headercolor" href="./registro.html">Registro</a></li>
+        <div id="manosCaja"><h1 id="ManosALaMasa">Manos a la Masa</h1></div>
+        <div class="logo-container">
+          <img
+            src="img/Logos Pizzas de Masa Madre Retro Negro.png"
+            alt=""
+            class="logo"
+          />
+        </div>
+      </section>
 
 
-            
-        </ul>
-    </section>
+      <section class="cajaBuscar">
+        <form id="buscarForm" action="resultado.html" method="get">
+          <input
+            type="text"
+            id="searchInput"
+            name="search"
+            placeholder="Buscar.."
+            required
+          />
+          <button type="submit">Buscar</button>
+          <p id="mensaje-error">
+            La busqueda tiene que tener al menos 3 caracteres
+          </p>
+          <p id="mensaje-error2">La busqueda no puede estar vacia</p>
+        </form>
+      </section>
+
+
     </header>
     
 
 
-    <section>
-      <h1 id="ManosALaMasa">Manos a la Masa</h1>
-      <div class="logo-container">
-        <img
-          src="img/Logos Pizzas de Masa Madre Retro Negro.png"
-          alt=""
-          class="logo"
-        />
-      </div>
-    </section>
+   
 
 
     <section class="recipeDetail"></section>
