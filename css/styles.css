@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+*{
+  box-sizing: border-box;
+}
+
 header{
   background-color: rgb(96, 139, 193);
 }
@@ -120,4 +124,71 @@ h4{
 /* Estilo para la lista de categorias en el receta.js, asi no estan azul */
 .categorias{
   color: black;
+}
+
+/* Estilo para los forms de registro y login */
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
+
+.formRegistro {
+  background-color: #ffffff; 
+  padding: 20px 20px;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 35%;
+  box-sizing: border-box;
+}
+
+.formRegistro h2 {
+  margin-bottom: 20px;
+  color: #333333; /* Texto oscuro */
+  text-align: center;
+}
+
+/* Etiquetas */
+.formRegistro label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555555; /* Texto más tenue */
+}
+
+
+#email, #password  {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #141313;
+}
+
+
+
+.formRegistro a {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #007bff; 
+  text-decoration: none;
+}
+
+
+
+/* Botón */
+.formRegistro button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+  background-color: #06a02a;
+  color: white;
+  border-radius: 4px;
+}
+
+.formRegistro button:hover {
+  background-color: #91d9a1; 
 }

@@ -36,18 +36,28 @@
 </section>
 
   
-    <!-- Aca no entendi bien esto: "Validar el campo email. Si está vacío mostrar al usuario el texto en pantalla (no con alert)
-      "Por favor complete el campo" y el formulario no se enviará."" -->
+    <section class="form-container">
+
+
     <form class="formRegistro" action="login.html">
-      <input type="email" name="mail" value="" placeholder="Email" />
-      <input type="password" name="pass" value="" placeholder="Contraseña" />
+      <h2>Registrarse</h2>
+      <label for="email">Email: </label>
+
+      <input type="email" name="mail" id="email" placeholder="pepito@gmail.com" required/>
+      <label for="password" >Contraseña: </label>
+      <input type="password" name="pass" id="password" required/>
       <label>
         <input type="radio" />
         "Terminos y Condiciones"
       </label>
-      <a href="./login.html">Ya tengo una cuenta</a>
       <button type="submit">Enviar</button>
+
+      <a href="./login.html">Ya tengo una cuenta</a>
     </form>
+
+
+  </section>
+
 
     <footer>
       <h4>Trabajo hecho por: Benicio Levy & Benjamin Caronni</h4>
