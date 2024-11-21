@@ -1,35 +1,40 @@
 console.log("El archivo header.js está cargado correctamente.");
 
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let buscador = queryStringObj.get("buscador");
-
 let buscarForm = document.querySelector("#buscarForm");
 let searchInput = document.querySelector("#searchInput");
 let errorMessage = document.querySelector("#mensaje-error");
 let errorMessage2 = document.querySelector("#mensaje-error2");
-let validacionBool = false;
 
-if (buscarForm){
-  buscarForm.addEventListener("submit", function (event) {
-    
-    if (searchInput.value == "") {
+let querString = location.search;
+let querStringObj = new URLSearchParams(querString);
+let buscador = querStringObj.get("buscador");
+
+buscarForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+//validacion
+  if (searchInput.value == "") {
       errorMessage2.style.display = "block";
       errorMessage.style.display = "none"; // Oculta el mensaje de "muy corto"
-      validacionBool = false
-      event.preventDefault();
-    } else if (searchInput.value.length < 3) {
+
+   } else if (searchInput.value.length < 3) {
       errorMessage.style.display = "block"; // Muestra el mensaje de "muy corto"
       errorMessage2.style.display = "none"; // Oculta el mensaje de "campo vacío"
-      event.preventDefault();
-      validacionBool = false
+
+
     } else {
       errorMessage.style.display = "none";
       errorMessage2.style.display = "none";
-      validacionBool = true
+      window.location.href = `./resultado.html?buscador=${searchInput.value}`
 
+    }
+  });
+  
 
-    if (validacionBool === true ){
+    
+
+    if (buscador){
+      console.log("Termino de busqueda recibido: ", buscador)
       fetch(`https://dummyjson.com/recipes/search?q=${buscador}`)
         .then(function (response) {
           return response.json();
@@ -55,13 +60,11 @@ if (buscarForm){
                               `;
               }
               recipeSearch.innerHTML = cadenaSearch;
-              
+
             });
         }
       
-    }
-  });
-  
+    
   
   
 /*searchInput.addEventListener("blur", function () {
@@ -75,4 +78,3 @@ if (buscarForm){
 }
 })
 */
-}
