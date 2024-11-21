@@ -14,7 +14,7 @@ footer{
 }
 
 body{
- background-color:rgb(203, 220, 235);
+ background-color:rgb(244, 242, 230);
 }
 
 /*Estilo para el titulo principal */
@@ -25,6 +25,7 @@ body{
   align-items: center;
   justify-content: space-around;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 #ManosALaMasa{
 text-align: center;
@@ -32,6 +33,7 @@ font-family: "Montserrat", sans-serif;
 letter-spacing: 1px;
 color: rgb(0, 0, 0);
 background-color: white;
+
 
 
 }
@@ -62,17 +64,68 @@ ul li a {
   justify-content: space-around;
   padding-bottom: 5%;
 }
-/* estilo para color blanco del header y font */
+
+/* estilo para el boton buscar del header */
+.botonbuscar{
+  background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0); 
+      border: none; 
+      font-size: 16px; 
+      border-radius: 5px; 
+      padding: 6px;
+    }
+    .botonbuscar:hover {
+      background-color: #e64a19;
+    }
+  
+.quequierescomer{
+  padding: 10px;
+}
+
+.cajaBuscar .quequierescomer input{
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white ;
+
+}
+
+/* estilo para que el header sea una flexbox y colores etc */
+
+.nav-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  
+}
+.nav-lista {
+  display: flex;              
+  justify-content: space-evenly;  
+  align-items: center;      
+  list-style-type: none;         
+  margin: 0;                
+  padding: 0;                
+  width: 100%;
+}
+
+
+
+
 .headercolor {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: whitesmoke;
+  background-color: #e64a19;
+  padding: 15px;
+  border-radius: 8px;
+  border: solid 1px;
+  text-align: center;
 
 }
 
-#searchInput { 
-  background-color: rgb(243, 243, 224);
-}
 
 /* styles para el header */
 #mensaje-error, #mensaje-error2, .errorCargarMas {
@@ -155,7 +208,7 @@ h4{
   align-items: center;
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .formRegistro {

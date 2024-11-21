@@ -9,36 +9,37 @@
 <body>
 
     <header>
-        <section>
-          <ul>
-            <li><a class="headercolor" href="./index.html">Home</a></li>
-            <li>
-              <a class="headercolor" href="./categorias.html">Categorias</a>
-            </li>
-            <li><a class="headercolor" href="./login.html">Login</a></li>
-            <li><a class="headercolor" href="./registro.html">Registro</a></li>
-          </ul>
-        </section>
-  
+      <section class="nav-container">
+        <ul class="nav-lista">
+          <li><a class="headercolor" href="./index.html">Home</a></li>
+          <li>
+            <a class="headercolor" href="./categorias.html">Categorias</a>
+          </li>
+          <li><a class="headercolor" href="./login.html">Login</a></li>
+          <li><a class="headercolor" href="./registro.html">Registro</a></li>
+        </ul>
+      </section>
         
   
   
-        <section class="cajaBuscar">
-          <form id="buscarForm" action="resultado.html" method="get">
-            <input
-              type="text"
-              id="searchInput"
-              name="search"
-              placeholder="Buscar.."
-              required
-            />
-            <button type="submit">Buscar</button>
-            <p id="mensaje-error">
-              La busqueda tiene que tener al menos 3 caracteres
-            </p>
-            <p id="mensaje-error2">La busqueda no puede estar vacia</p>
-          </form>
-        </section>
+       
+      <section class="cajaBuscar">
+        <form id="buscarForm" action="resultado.html" method="get" class="quequierescomer">
+          <input
+            type="text"
+            id="searchInput"
+            name="search"
+            placeholder="Que te gustaria preparar? "
+            required
+          />
+          <button type="submit" class="botonbuscar">Buscar</button>
+          <p id="mensaje-error">
+            La busqueda tiene que tener al menos 3 caracteres
+          </p>
+          <p id="mensaje-error2">La busqueda no puede estar vacia</p>
+        </form>
+      </section>
+
   
   
       </header>

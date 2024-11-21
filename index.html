@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <section>
-        <ul>
+      <section class="nav-container">
+        <ul class="nav-lista">
           <li><a class="headercolor" href="./index.html">Home</a></li>
           <li>
             <a class="headercolor" href="./categorias.html">Categorias</a>
@@ -32,15 +32,15 @@
 
 
       <section class="cajaBuscar">
-        <form id="buscarForm" action="resultado.html" method="get">
+        <form id="buscarForm" action="resultado.html" method="get" class="quequierescomer">
           <input
             type="text"
             id="searchInput"
             name="search"
-            placeholder="Buscar.."
+            placeholder="Que te gustaria preparar? "
             required
           />
-          <button type="submit">Buscar</button>
+          <button type="submit" class="botonbuscar">Buscar</button>
           <p id="mensaje-error">
             La busqueda tiene que tener al menos 3 caracteres
           </p>
