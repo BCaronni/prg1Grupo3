@@ -284,3 +284,7 @@ h4{
 .formRegistro button:hover {
   background-color: #91d9a1; 
 }
+
+.categoriasVerMas{
+  color: black;
+}
