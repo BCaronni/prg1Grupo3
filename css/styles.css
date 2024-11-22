@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
 *{
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 header{
@@ -57,6 +59,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-bottom: 5%;
+padding-top: 50px;
 
 
 }
@@ -134,7 +137,7 @@ ul li a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: whitesmoke;
-  background-color: #e64a19;
+  background-color:rgb(56, 112, 83);
   padding: 15px;
   border-radius: 8px;
   border: solid 1px;
@@ -213,10 +216,19 @@ h4{
   color: whitesmoke;
 }
 
+/* Estilos para las recetas en Ver Mas */
+.imagenReceta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilo para la lista de categorias en el receta.js, asi no estan azul */
 .categorias{
   color: black;
 }
+
+
 
 /* Estilo para los forms de registro y login */
 .form-container{
@@ -313,7 +325,7 @@ h4{
 
 .categoriaArticle a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
   text-align: center;

@@ -23,10 +23,10 @@ if (id) {
                 let recipeDetail = document.querySelector(".recipeDetail");
 
                 let cadena = `
-                    <h2>${receta.name}</h2>
-                    <img src="${receta.image}" alt="${receta.name}"  />
+                    <h2 style="text-align: center;">${receta.name}</h2>
+                   <div class="imagenReceta"> <img src="${receta.image}" alt="${receta.name}" style="border-radius: 10%; width:20%" /> </div>
 
-                    <p>Instrucciones: </p>`;
+                    <p style="font-weight: bold">Instrucciones: </p>`;
                     // Aca con el bucle recorremos las instrucciones de la receta por el ID, y se agregan todas como <p>
                     for (let i = 0; i<receta.instructions.length; i++){
                         cadena += `<p>-${receta.instructions[i]} </p>`;
@@ -34,7 +34,7 @@ if (id) {
                     
                  cadena +=`
                     <p>Tiempo de cocción: ${receta.cookTimeMinutes} minutos</p>
-                    <p>Categorías:</p>
+                    <p style="font-weight: bold">Categorías:</p>
                    <ul>
                    ` ;
 

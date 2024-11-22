@@ -11,7 +11,7 @@ errorMessage5.style.display ="none";
 
 if (buscador3){
     console.log("Categoria recibida: ", buscador3)//si existe buscador se busca en la api
-    fetch(`https://dummyjson.com/recipes/tag/${buscador3}`)
+    fetch(`https://dummyjson.com/recipes/tags/${buscador3}`)
       .then(function (response) {
         return response.json();
         })
