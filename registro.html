@@ -18,39 +18,51 @@
           <li><a class="headercolor" href="./registro.html">Registro</a></li>
         </ul>
       </section>
-
-      
-
-
     </header>
 
-  
     <section class="form-container">
+      <form
+        action="login.html"
+        method="get"
+        id="registerForm"
+        class="formRegistro"
+      >
+        <h2>Registrarse</h2>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="pepito@gmail.com"
+        />
+        <p id="mensaje-error3">Por favor complete el campo</p>
+        <label for="password">Contraseña: </label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Contraseña"
+        />
+        <p id="mensaje-error4">Por favor complete el campo</p>
 
+        <label for="password">Vuelva a introducir contraseña: </label>
+        <input
+          type="password"
+          id="passwordAgain"
+          name="repeatPassword"
+          placeholder="Repetir Contraseña"
+        />
+        <p id="mensaje-error5">Por favor reintroduce la contraseña</p>
+        <button type="submit">Iniciar sesion</button>
 
-    <form class="formRegistro" action="login.html">
-      <h2>Registrarse</h2>
-      <label for="email">Email: </label>
-
-      <input type="email" name="mail" id="email" placeholder="pepito@gmail.com" required/>
-      <label for="password" >Contraseña: </label>
-      <input type="password" name="pass" id="password" required/>
-      <label>
-        <input type="radio" />
-        "Terminos y Condiciones"
-      </label>
-      <button type="submit">Enviar</button>
-
-      <a href="./login.html">Ya tengo una cuenta</a>
-    </form>
-
-
-  </section>
-
+        <a href="login.html">Ya tengo cuenta</a>
+      </form>
+    </section>
 
     <footer>
-      <h4>Trabajo hecho por: Benicio Levy & Benjamin Caronni</h4>
+      <h4 id="footerForms">Trabajo hecho por: Benicio Levy & Benjamin Caronni</h4>
     </footer>
-  <script src="js/header.js"></script> 
+    <script src="js/header.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>

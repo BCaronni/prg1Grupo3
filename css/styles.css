@@ -38,6 +38,19 @@ background-color: white;
 
 }
 
+#recetass{
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+#footerForms{
+  margin-top: 27%;
+}
+
+
 /* Clase para logo */
 .logo-container{
 display: flex;
@@ -63,7 +76,10 @@ ul li a {
   display: flex;
   justify-content: space-around;
   padding-bottom: 5%;
+  padding-top: 3%;
+
 }
+
 
 /* estilo para el boton buscar del header */
 .botonbuscar{
@@ -128,7 +144,7 @@ ul li a {
 
 
 /* styles para el header */
-#mensaje-error, #mensaje-error2, .errorCargarMas {
+#mensaje-error, #mensaje-error2, #mensaje-error3, #mensaje-error4, #mensaje-error5, .errorCargarMas {
   color: red;
   display: none;
   font-weight: bold;
@@ -144,6 +160,7 @@ ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 /* Estilo para cada receta */
@@ -212,7 +229,7 @@ h4{
 }
 
 .formRegistro {
-  background-color: #ffffff; 
+  background-color: transparent;
   padding: 20px 20px;
   border-radius: 7px;
   width: 100%;
@@ -234,7 +251,7 @@ h4{
 }
 
 
-#email, #password  {
+#email, #password, #passwordAgain {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
