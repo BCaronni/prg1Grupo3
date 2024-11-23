@@ -25,10 +25,11 @@ if (buscador3){
         let categoriaData = data.recipes;
         for (let i = 0; i < categoriaData.length; i++){
             cadena10 += 
-             `<article>
-                     <img src="${categoriaData[i].image}" alt="">
-                     <h3>${categoriaData[i].name}</h3>
+             `<article class="cajaCategorias">
+                     <h3 " >${categoriaData[i].name}</h3>
                       <p><strong>Dificultad:</strong> ${categoriaData[i].difficulty}</p>
+                                           <img src="${categoriaData[i].image}" alt="" style="border-radius: 10%; width:50%">
+
                         <p><a href="receta.html?id=${categoriaData[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
                      
                </article>
