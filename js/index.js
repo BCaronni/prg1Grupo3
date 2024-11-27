@@ -28,10 +28,10 @@ fetch('https://dummyjson.com/recipes')
         for (let i = inicio; i < inicio + diez; i++){
             cadena += 
              `<article>
-                     <img src="${recetas[i].image}" alt="">
+                     <img src="${recetas[i].image}" alt="" style="border-radius: 23%">
                      <h3>${recetas[i].name}</h3>
                       <p><strong>Dificultad:</strong> ${recetas[i].difficulty}</p>
-                        <p><a href="receta.html?id=${recetas[i].id}" style="text-decoration: none; color: blue;">Ver más</a></p>
+                        <p><a href="receta.html?id=${recetas[i].id}" class ="VerMasIndex" >Ver más</a></p>
                      
                </article>
 

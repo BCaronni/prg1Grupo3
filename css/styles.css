@@ -10,7 +10,10 @@ header{
   background-image: url(../img/1000_F_419155931_5ls7XLdQcyP0etGr5MjhgJHId4uYscbn.jpg);
   background-repeat: no-repeat;
   background-size: cover  ;
-}
+border-bottom-left-radius: 12%;
+border-bottom-right-radius: 12%;
+border-top-left-radius: 5%;
+border-top-right-radius: 5%;}
 footer{
   background-color: rgb(56, 112, 83);
 }
@@ -46,6 +49,16 @@ background-color: white;
   font-weight: bold;
   font-size: 30px;
 
+}
+
+.VerMasIndex
+{
+  text-decoration: none; 
+  color: blue;
+}
+.VerMasIndex:hover{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 #footerForms{
@@ -143,6 +156,11 @@ ul li a {
   border: solid 1px;
   text-align: center;
 
+}
+.headercolor:hover{
+  background-color: rgb(44, 85, 64);;
+  color: white;
+  font-weight: bold;
 }
 
 
@@ -350,7 +368,7 @@ h4{
 
 .cajaCategorias {
   width: 300px; 
-  background-color: #f0f0f0; 
+  background-color: #ffffff; 
   border: 1px solid #ddd; 
   border-radius: 5px;
   padding: 10px;
