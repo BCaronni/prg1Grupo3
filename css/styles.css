@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap");
+* {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-
 }
 
-header{
+header {
   background-color: rgb(96, 139, 193);
   background-image: url(../img/1000_F_419155931_5ls7XLdQcyP0etGr5MjhgJHId4uYscbn.jpg);
   background-repeat: no-repeat;
-  background-size: cover  ;
-border-bottom-left-radius: 12%;
-border-bottom-right-radius: 12%;
-border-top-left-radius: 5%;
-border-top-right-radius: 5%;}
-footer{
+  background-size: cover;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+footer {
   background-color: rgb(56, 112, 83);
 }
 
-body{
- background-color:rgb(244, 242, 230);
+body {
+  background-color: rgb(244, 242, 230);
 }
 
 /*Estilo para el titulo principal */
 
-#manosCaja{
+#manosCaja {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,51 +32,43 @@ body{
   padding-bottom: 20px;
   padding-top: 40px;
 }
-#ManosALaMasa{
-text-align: center;
-font-family: "Montserrat", sans-serif;
-letter-spacing: 1px;
-color: rgb(0, 0, 0);
-background-color: white;
-
-
-
+#ManosALaMasa {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  background-color: white;
 }
 
-#recetass{
+#recetass {
   text-decoration: underline;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-
 }
 
-.VerMasIndex
-{
-  text-decoration: none; 
+.VerMasIndex {
+  text-decoration: none;
   color: blue;
 }
-.VerMasIndex:hover{
+.VerMasIndex:hover {
   text-decoration: underline;
   font-weight: bold;
 }
 
-#footerForms{
+#footerForms {
   margin-top: 27%;
 }
 
-
 /* Clase para logo */
-.logo-container{
-display: flex;
-justify-content: center;
-align-items: center;
-padding-bottom: 5%;
-padding-top: 50px;
-
-
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+  padding-top: 50px;
 }
-.logo{
+.logo {
   height: 12%;
   width: 12%;
   border-radius: 60px;
@@ -88,89 +80,84 @@ ul li a {
 }
 
 /*Estilo para la caja del Buscar en el header */
-.cajaBuscar{
+.cajaBuscar {
   display: flex;
   justify-content: space-around;
   padding-bottom: 5%;
   padding-top: 3%;
-
 }
 
-
 /* estilo para el boton buscar del header */
-.botonbuscar{
+.botonbuscar {
   background-color: rgb(255, 255, 255);
-      color: rgb(0, 0, 0); 
-      border: none; 
-      font-size: 16px; 
-      border-radius: 5px; 
-      padding: 6px;
-    }
-    .botonbuscar:hover {
-      background-color: #e64a19;
-    }
-  
-.quequierescomer{
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 6px;
+}
+.botonbuscar:hover {
+  background-color: #e64a19;
+}
+
+.quequierescomer {
   padding: 10px;
 }
 
-.cajaBuscar .quequierescomer input{
+.cajaBuscar .quequierescomer input {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  background-color: white ;
-
+  background-color: white;
 }
 
 /* estilo para que el header sea una flexbox y colores etc */
 
-.nav-container{
+.nav-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-
-  
 }
 .nav-lista {
-  display: flex;              
-  justify-content: space-evenly;  
-  align-items: center;      
-  list-style-type: none;         
-  margin: 0;                
-  padding: 0;                
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
-
-
-
 
 .headercolor {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: whitesmoke;
-  background-color:rgb(56, 112, 83);
+  background-color: rgb(56, 112, 83);
   padding: 15px;
   border-radius: 8px;
   border: solid 1px;
   text-align: center;
-
 }
-.headercolor:hover{
-  background-color: rgb(44, 85, 64);;
+.headercolor:hover {
+  background-color: rgb(44, 85, 64);
   color: white;
   font-weight: bold;
 }
 
-
 /* styles para el header */
-#mensaje-error, #mensaje-error2, #mensaje-error3, #mensaje-error4, #mensaje-error5, .errorCargarMas {
+#mensaje-error,
+#mensaje-error2,
+#mensaje-error3,
+#mensaje-error4,
+#mensaje-error5,
+.errorCargarMas {
   color: red;
   display: none;
   font-weight: bold;
 }
-.cargarMas-container{
+.cargarMas-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,31 +213,26 @@ ul li a {
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
-  
 }
 
-h4{
+h4 {
   text-align: center;
   color: whitesmoke;
 }
 
 /* Estilos para las recetas en Ver Mas */
-.imagenReceta{
+.imagenReceta {
   display: flex;
   justify-content: center;
 }
 
-
-
 /* Estilo para la lista de categorias en el receta.js, asi no estan azul */
-.categorias{
+.categorias {
   color: black;
 }
 
-
-
 /* Estilo para los forms de registro y login */
-.form-container{
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,25 +263,22 @@ h4{
   color: #555555; /* Texto más tenue */
 }
 
-
-#email, #password, #passwordAgain {
+#email,
+#password,
+#passwordAgain {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #141313;
 }
 
-
-
 .formRegistro a {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #007bff; 
+  color: #007bff;
   text-decoration: none;
 }
-
-
 
 /* Botón */
 .formRegistro button {
@@ -313,15 +292,14 @@ h4{
 }
 
 .formRegistro button:hover {
-  background-color: #91d9a1; 
+  background-color: #91d9a1;
 }
 
-.categoriasVerMas{
+.categoriasVerMas {
   color: black;
 }
 
-
-/* Estilos Categorias */ 
+/* Estilos Categorias */
 .tagList {
   display: flex;
   flex-wrap: wrap;
@@ -341,7 +319,6 @@ h4{
   justify-content: center;
   align-items: center;
 }
-
 .categoriaArticle a {
   text-decoration: none;
   color: #000000;
@@ -350,10 +327,17 @@ h4{
   text-align: center;
 }
 
+.categoriaArticleClick{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+
 .categoriaArticle:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Clases para las recetas DENTRO de categorias */
 
@@ -366,80 +350,99 @@ h4{
   align-items: center;
 }
 
-.cajaCategorias {
-  width: 300px; 
-  background-color: #ffffff; 
-  border: 1px solid #ddd; 
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 20px;
-  margin-top: 20px;
-  text-align: center; 
-  
+
+/* para las recetas en categorias */
+.categoriaS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 10px;
 }
+
+/*  para cada receta en categoria */
+.categoriaS article {
+  width: 45%;
+  padding: 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+/* Estilo para las imágenes */
+.categoriaS img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-top: 5%;
+}
+
+
+
+
 
 /* El responsive para las paginas */
 @media (max-width: 800px) {
   .containerCategorias {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .cajaCategorias {
-    width: 90%; 
-    margin: 10px auto; 
+    width: 90%;
+    margin: 10px auto;
   }
 
   .logo {
-    width: 35%; 
+    width: 35%;
     height: auto;
   }
 
   .formRegistro {
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   .recipeList article {
-    width: 90%; 
+    width: 90%;
   }
 
   .recipeSearch article {
-    width: 90%; 
+    width: 90%;
   }
 }
 
 @media (max-width: 500px) {
   .cajaCategorias {
-    width: 100%; 
+    width: 100%;
   }
 
   .logo {
-    width: 35%; 
+    width: 35%;
     height: auto;
   }
 
-/* Estos son para que ocupen todo el ancho de la pagina, el form, la lista de recetas y cuando buscas */
+  /* Estos son para que ocupen todo el ancho de la pagina, el form, la lista de recetas y cuando buscas */
   .recipeList article {
-    width: 100%; 
+    width: 100%;
   }
 
   .recipeSearch article {
-    width: 100%; 
+    width: 100%;
   }
 
   .formRegistro {
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   /* Agregar espacio en el header para los links */
   .nav-lista {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-lista li {
-    margin: 20px; 
+    margin: 20px;
   }
-
-  
-
 }

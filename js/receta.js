@@ -41,7 +41,7 @@ if (id) {
 
                     // Aca con el for recorremos las categorias y las que coincidan con el ID se agregan a la lista
                 for (let i = 0; i < receta.tags.length; i++) {
-                    cadena += `<li><p><a class="categoriasVerMas" href="./resultado.html?buscador=${receta.tags[i]}"</a>${receta.tags[i]}</p></li>`;
+                    cadena += `<li><p><a class="categoriasVerMas" href="./resultado.html?buscador3=${receta.tags[i]}"</a>${receta.tags[i]}</p></li>`;
                 }
 
                 cadena += `</ul>`;
