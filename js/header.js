@@ -14,12 +14,12 @@ buscarForm.addEventListener("submit", function (event) {
 
 //validacion
   if (searchInput.value == "") {
-      errorMessage2.style.display = "block";
+      errorMessage2.style.display = "block"; // Muestra el mensaje de "muy corto"
       errorMessage.style.display = "none"; // Saca el mensaje de "muy corto"
 
    } else if (searchInput.value.length < 3) {
-      errorMessage.style.display = "block"; // Muestra el mensaje de "muy corto"
-      errorMessage2.style.display = "none"; // Saca el mensaje de "campo vacío"
+      errorMessage.style.display = "block"; 
+      errorMessage2.style.display = "none"; 
 
 
     } else {//si esta validado pasa a esto

@@ -16,7 +16,7 @@ fetch("https://dummyjson.com/recipes/tags")
     tagList.style.display = "wrap";
     tagList.style.display = "space-evenly";
 
-    //Recorro el array, arranca en 0 y va hasta 10,
+
     for (let i = 0; i < tags.length; i++) {
       cadena +=
 

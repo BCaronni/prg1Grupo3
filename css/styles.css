@@ -32,13 +32,7 @@ body {
   padding-bottom: 20px;
   padding-top: 40px;
 }
-#ManosALaMasa {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-  color: rgb(0, 0, 0);
-  background-color: white;
-}
+
 
 #recetass {
   text-decoration: underline;
@@ -183,7 +177,7 @@ ul li a {
   font-family: "Montserrat";
 }
 
-/* Estilo para las imágenes */
+/* estilo para las imágenes */
 .recipeList img {
   width: 50%;
   height: auto;
@@ -256,7 +250,7 @@ h4 {
   text-align: center;
 }
 
-/* Etiquetas */
+/* etiquetas */
 .formRegistro label {
   display: block;
   margin-bottom: 8px;
@@ -280,7 +274,7 @@ h4 {
   text-decoration: none;
 }
 
-/* Botón */
+/* boton */
 .formRegistro button {
   width: 100%;
   padding: 10px;
@@ -299,7 +293,7 @@ h4 {
   color: black;
 }
 
-/* Estilos Categorias */
+/* estilos Categorias */
 .tagList {
   display: flex;
   flex-wrap: wrap;
@@ -371,7 +365,7 @@ h4 {
   font-family: "Montserrat";
 }
 
-/* Estilo para las imágenes */
+/* estilo para las imágenes */
 .categoriaS img {
   width: 50%;
   height: auto;
