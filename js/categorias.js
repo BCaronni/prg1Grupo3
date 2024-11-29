@@ -16,11 +16,8 @@ fetch("https://dummyjson.com/recipes/tags")
     tagList.style.display = "wrap";
     tagList.style.display = "space-evenly";
 
-
     for (let i = 0; i < tags.length; i++) {
-      cadena +=
-
-        `<a  class="categoriaArticleClick" href="./resultado.html?buscador3=${tags[i]}">
+      cadena += `<a  class="categoriaArticleClick" href="./resultado.html?buscador3=${tags[i]}">
           <article class="categoriaArticle">
             <p>${tags[i]}</p>
           </article>
